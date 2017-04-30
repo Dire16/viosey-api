@@ -5,8 +5,7 @@ var router = express.Router();
 /* GET home page. */
 router.get('/', function(req, res, next) {
   var sites = [
-    ["Material Theme", "https://api.viosey.com/material", "GET"],
-    ["Paranoia", ""]
+    ["Material Theme", "https://api.viosey.com/material", "GET"]
   ];
   res.render('index', { 
     title: "Viosey's API",
