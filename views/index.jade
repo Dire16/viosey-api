@@ -3,3 +3,7 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
+    each site in sites
+      li 
+        a(href='#{site[1]}') #{site[0]}
+        span &nbsp;&nbsp;&nbsp;(Method: #{site[2]})
