@@ -18,6 +18,14 @@ router.get('/material', function(req, res) {
   res.json({ version: "1.3.4" });
 });
 
+router.get('/react-demo', function(req, res) {
+  res.json({
+    name: "react-demo",
+    key1: "value1",
+    key2: "value2"
+  });
+});
+
 /* GET Material API. */
 // router.get('/paranoia', function(req, res) {
 //   fs.readFile('https://viosey.com/paranoia.json', function(err, data){
